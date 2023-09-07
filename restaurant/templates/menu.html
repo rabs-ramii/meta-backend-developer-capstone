@@ -1,0 +1,16 @@
+<h1>MENU ITEMS:</h1>
+
+{% for item in menu_items %}
+
+<h1>{{ item.title }}</h1>
+
+<ul>
+    <li>
+        <h3>Price: <span style="color:red;">{{ item.price }}</span></h3>
+    </li>
+    <li>
+        <h3>Inventory:<span style="color:red;">{{ item.inventory }}</span></h3>
+    </li>
+</ul>
+
+{% endfor %}

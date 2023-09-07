@@ -1,0 +1,16 @@
+<h1>BOOKING SCHEDULE:</h1>
+
+{% for item in booking_items %}
+
+<h1>{{ item.name }}</h1>
+
+<ul>
+    <li>
+        <h4>No. of Guests: <span style="color: red;">{{ item.no_of_guests }}</span></h4>
+    </li>
+    <li>
+        <h4>Date of Reservation: <span style="color: red;">{{ item.reservation_date }}</span></h4>
+    </li>
+</ul>
+
+{% endfor %}
